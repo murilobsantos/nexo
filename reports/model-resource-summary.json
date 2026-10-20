@@ -1,0 +1,18 @@
+{
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "duration_seconds": 14.851209799999197,
+  "sample_count": 15,
+  "scope": "backend",
+  "peak_process_rss_mib": 799.25390625,
+  "processes_observed_in_all_samples": true,
+  "peak_system_gpu_used_mib": 4224,
+  "average_machine_cpu_percent_approx": 6.663317983248657,
+  "minimum_available_ram_mib": 6180.68359375,
+  "limitations": "GPU é uso total do sistema. Amostras podem perder picos; CPU subestima processos transitórios; RSS agregado pode contar páginas compartilhadas. Não mede interferência em jogos.",
+  "five_minute_window": false,
+  "peak_ollama_rss_mib": 799.25390625,
+  "request_elapsed_seconds": 13.20119110000087,
+  "generation_completed": true,
+  "note": "Janela inclui carregamento, geração e descarga; média CPU não é exclusiva de geração. Não é medição ociosa de cinco minutos."
+}

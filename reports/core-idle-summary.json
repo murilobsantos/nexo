@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 300.53423420000036,
+  "sample_count": 121,
+  "scope": "core",
+  "peak_process_rss_mib": 78.41796875,
+  "processes_observed_in_all_samples": true,
+  "peak_system_gpu_used_mib": 1476,
+  "average_machine_cpu_percent_approx": 0.04245911185670392,
+  "minimum_available_ram_mib": 6166.0390625,
+  "limitations": "GPU é uso total do sistema. Amostras podem perder picos; CPU subestima processos transitórios; RSS agregado pode contar páginas compartilhadas. Não mede interferência em jogos.",
+  "five_minute_window": true
+}

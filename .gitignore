@@ -1,0 +1,11 @@
+.runtime/
+.venv/
+__pycache__/
+*.pyc
+.env
+reports/local-*
+tools/stack-probe/node_modules/
+tools/stack-probe/dist/
+frontend/node_modules/
+frontend/dist/
+*.egg-info/

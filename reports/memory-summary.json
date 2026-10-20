@@ -1,0 +1,34 @@
+{
+  "result": "passed",
+  "checks": {
+    "ui_memory_saved": true,
+    "ui_no_errors": true,
+    "ui_no_overflow": true,
+    "completed_1": true,
+    "remember_after_restart": true,
+    "completed_2": true,
+    "corrected_value": true,
+    "memory_guided_patch_ready": true,
+    "memory_guided_tests_pass": true,
+    "memory_guided_patch_uses_decision": true,
+    "decision_applied_to_project": true,
+    "decision_patch_restored": true,
+    "all_versions_deleted": true,
+    "index_deleted": true,
+    "derived_answer_removed": true,
+    "completed_3": true,
+    "forgotten_value_absent": true,
+    "completed_4": true,
+    "research_has_real_source": true,
+    "research_distinguishes_inference": true,
+    "other_project_isolated": true
+  },
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "report": "reports/local-memory-e2e.json",
+  "scope": "Projetos de avalia??o isolados; nenhum arquivo pessoal alterado",
+  "limitations": [
+    "Uma fonte p?blica no teste de pesquisa; n?o equivale a aprova??o geral de qualidade.",
+    "Conjunto de 20 tarefas ainda pendente.",
+    "Rascunho da leitura do plano real exigiu revis?o das cita??es."
+  ]
+}

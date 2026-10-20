@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "schedule_created_in_ui": true,
+    "paused_schedule_does_not_run": true,
+    "desktop_no_overflow": true,
+    "ui_no_errors": true,
+    "mobile_no_overflow": true,
+    "scheduled_real_model_completed": true,
+    "scheduled_answer_has_evidence": true,
+    "finite_budget_exhausted": true,
+    "personal_model_unloaded": true,
+    "native_activity_available": true,
+    "metadata_read_kept_foreground": true,
+    "model_still_unloaded_30": true,
+    "model_still_unloaded_60": true,
+    "model_still_unloaded_90": true,
+    "model_still_unloaded_120": true,
+    "model_still_unloaded_150": true,
+    "model_still_unloaded_180": true,
+    "model_still_unloaded_210": true,
+    "model_still_unloaded_240": true,
+    "model_still_unloaded_270": true,
+    "model_still_unloaded_300": true,
+    "idle_memory_under_400_mib": true,
+    "idle_cpu_under_one_percent": true
+  },
+  "metrics": {
+    "seconds": 301.347510399999,
+    "peak_core_tree_rss_mib": 80.5,
+    "machine_cpu_percent": 0.08036817681968837,
+    "sensor_enabled": true,
+    "mode": "personal",
+    "game_benchmark": false
+  },
+  "result": "passed",
+  "report": "reports/local-coexistence-e2e.json",
+  "limitations": [
+    "Amostragem ociosa n?o equivale a benchmark de jogo.",
+    "Retorno e retomada usam sensor determin?stico nos testes; sensor nativo foi exercitado na demonstra??o.",
+    "Pausa durante Git lento foi testada com processo Windows real em Job."
+  ]
+}

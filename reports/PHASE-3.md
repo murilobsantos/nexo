@@ -1,0 +1,21 @@
+# Fase 3 — memória e pesquisa demonstradas no escopo inicial
+
+Implementado em 18/10/2026: SQLite v3 com backup antes da migração, memória explícita por projeto, perfil compartilhado, versões, conflitos e resolução, validade/revisão/sensibilidade, FTS5 e fontes fragmentadas. Conversas e desenvolvimento recebem contexto como dados sem conceder ferramentas.
+
+API e painel Memória permitem guardar, corrigir, resolver e apagar memórias, importar URL pública, apagar fontes, indexar arquivos e consultar exclusões do catálogo. Indexação manual limitada a 200 arquivos/2 MiB; arquivos já indexados são atualizados antes da próxima conversa. Alterações ou remoções invalidam conhecimentos vinculados à fonte. Catálogo usa metadados sem ler conteúdo; leitura rejeita padrões conhecidos de credenciais, sem promessa de detecção universal.
+
+Perfil global só aceita categoria `profile`. Inicialização padrão compartilha `.runtime/profile/nexo.db`; `--data-dir` personalizado isola também o perfil em `data-dir/profile/`. Testes exercitam preferência compartilhada, correção/exclusão e isolamento de decisões/fontes privadas entre projetos. Categorias de episódios/habilidades existem no contrato; promoção automática depende das fases seguintes.
+
+Importação web faz GET somente da URL informada, sem arquivos locais, cookies ou proxies; bloqueia endereços privados/especiais, fixa o IP da conexão e verifica novamente cada redirecionamento. Restringe portas, tipo de conteúdo, tamanho e tempo de transporte. Não há mecanismo de busca geral. DNS usa o resolvedor do Windows e ainda pode exceder o tempo nominal de transporte; esta etapa não realiza ações no projeto.
+
+Mutações de memória e exclusões pausam o trabalhador. Exclusão remove versões, FTS, fragmentos e respostas diretamente vinculadas. Conservadoramente, remove também a cauda de conversas posteriores que possa ter reutilizado essas respostas; o pedido original permanece. Eventos de contexto/deltas afetados são limpos. Proposta com contexto apagado não pode ser publicada. Código já aplicado ao projeto não é desfeito automaticamente.
+
+Diário lateral `nexo.deletions.json` guarda identificadores/hashes e datas, sem conteúdo apagado. Restauração de banco com contexto exige uma lista explícita do diário atual e reaplica exclusões antes de retornar o banco. Preserve o diário mais recente junto aos backups; não use lista vazia quando houve exclusões. Backups antigos e cópias isoladas podem conter conteúdo: não há promessa de apagamento forense de snapshots. Cópias não voltam automaticamente ao contexto nem podem ser aplicadas pela proposta invalidada. Em outro processo/projeto, o diário global é reaplicado ao acessar contexto, tarefas ou eventos.
+
+**53 testes aprovados** em `phase3-tests.txt`, incluindo versões, conflitos, validade, isolamento, índices, derivados transitivos, fonte obsoleta, restauração com exclusões, redirecionamento privado e tamanho de resposta. TypeScript, Vite e dependências aprovados.
+
+**21 verificações reais aprovadas**, com Qwen3 Instruct e Edge headless em perfil separado: guardar pela UI, reiniciar, recordar 9187, corrigir para 9321, gerar patch orientado pela memória, testes independentes, aplicar/restaurar, esquecer, remover derivados e pesquisar fonte pública. Sumário em `memory-summary.json`; respostas/captura em `local-memory-*` (artefatos locais ignorados pelo Git). Reprodução: `python tools/live_memory.py`, com backend iniciado e porta 8766 livre.
+
+Pesquisa em Python.org separou evidência de inferência e citou URL efetivamente recuperada. Uma fonte e uma pergunta não aprovam qualidade geral. Uso real pequeno: leitura do plano original e checklist (`local-real-plan-task.json`). O rascunho trouxe referências de linha imprecisas e classificação discutível de recomendações, exigindo revisão. Checklist revisado em `docs/MVP-CHECKLIST.md`; orientação atual solicita caminhos/URLs, sem números de linha inventados.
+
+O aceite inicial da Fase 3 foi demonstrado. O conjunto completo de 20 tarefas, avaliações de recuperação em consultas pessoais, cancelamento durante todo preparo síncrono/Git, fases 4–9 e **duas semanas reais de uso** continuam pendentes. O objetivo integral permanece ativo.

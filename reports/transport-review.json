@@ -1,0 +1,72 @@
+﻿{
+  "samples": [
+    {
+      "id": "pt",
+      "context": 2048,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 11.784713900000497,
+      "tokens_per_second": 66.44124368165025
+    },
+    {
+      "id": "code",
+      "context": 2048,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 25.686077899998054,
+      "tokens_per_second": 63.837389448707455
+    },
+    {
+      "id": "tool",
+      "context": 2048,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 9.813963100001274,
+      "tokens_per_second": 68.31592824303762,
+      "exact_tool_selection": true
+    },
+    {
+      "id": "untrusted",
+      "context": 2048,
+      "complete_final_answer": false,
+      "semantic_review": "pending",
+      "elapsed_seconds": 25.972942200001853,
+      "tokens_per_second": 65.84919069158241
+    },
+    {
+      "id": "pt",
+      "context": 4096,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 24.260173100003158,
+      "tokens_per_second": 59.15972320542343
+    },
+    {
+      "id": "code",
+      "context": 4096,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 32.49840840000252,
+      "tokens_per_second": 59.23621790876831
+    },
+    {
+      "id": "tool",
+      "context": 4096,
+      "complete_final_answer": true,
+      "semantic_review": "pending",
+      "elapsed_seconds": 13.617697599998792,
+      "tokens_per_second": 61.71442268048831,
+      "exact_tool_selection": true
+    },
+    {
+      "id": "untrusted",
+      "context": 4096,
+      "complete_final_answer": false,
+      "semantic_review": "pending",
+      "elapsed_seconds": 34.98732999999993,
+      "tokens_per_second": 58.63894876857062
+    }
+  ],
+  "product_acceptance": "not_run",
+  "warning": "Resposta completa e JSON correto não comprovam correção geral nem permissões."
+}

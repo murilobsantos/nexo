@@ -1,0 +1,123 @@
+{
+  "kind": "synthetic_webgl",
+  "game_benchmark": false,
+  "resolution": [
+    1280,
+    720
+  ],
+  "shader_iterations": 64,
+  "measurement": "draw plus synchronous one-pixel readback",
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1660 Ti (0x00002182) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "summary": {
+    "baseline_median_ms": 3.400000000372529,
+    "personal_median_ms": 3.400000000372529,
+    "difference_percent": 0.0,
+    "baseline_run_range_ms": [
+      3.400000000372529,
+      3.400000000372529
+    ],
+    "personal_run_range_ms": [
+      3.400000000372529,
+      3.400000000372529
+    ],
+    "acceptance": "observational_only; no agreed game threshold"
+  },
+  "result": "measured",
+  "runs": [
+    {
+      "index": 0,
+      "core_enabled": false,
+      "frames": 901,
+      "seconds": 15.013200000000186,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    },
+    {
+      "index": 1,
+      "core_enabled": true,
+      "frames": 901,
+      "seconds": 15.012900000000373,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    },
+    {
+      "index": 2,
+      "core_enabled": true,
+      "frames": 901,
+      "seconds": 15.012199999999256,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    },
+    {
+      "index": 3,
+      "core_enabled": false,
+      "frames": 901,
+      "seconds": 15.014100000000559,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    },
+    {
+      "index": 4,
+      "core_enabled": false,
+      "frames": 901,
+      "seconds": 15.0135,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    },
+    {
+      "index": 5,
+      "core_enabled": true,
+      "frames": 901,
+      "seconds": 15.0125,
+      "median_draw_readback_ms": 3.400000000372529,
+      "median_frame_interval_ms": 16.699999999254942,
+      "pixel_checksum": 1093187,
+      "last_pixel": [
+        254,
+        0,
+        187,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic shader plus one-pixel readback, not an actual game.",
+    "Headless browser, 1280x720, six 15-second runs.",
+    "Equal medians do not prove zero overhead; timing resolution and background variation apply."
+  ]
+}
