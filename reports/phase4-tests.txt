@@ -1,0 +1,72 @@
+<Python packages>\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_acceptance_distribution_and_unique_ids (test_benchmark.RequestTests.test_acceptance_distribution_and_unique_ids) ... ok
+test_only_loopback_and_no_proxy (test_benchmark.RequestTests.test_only_loopback_and_no_proxy) ... ok
+test_rejects_oversized_backend_response (test_benchmark.RequestTests.test_rejects_oversized_backend_response) ... ok
+test_http_queue_sources_events_and_restart (test_core.ApiTests.test_http_queue_sources_events_and_restart) ... ok
+test_opened_object_is_checked_even_if_path_validation_was_raced (test_core.ScopeTests.test_opened_object_is_checked_even_if_path_validation_was_raced) ... ok
+test_reads_utf8_with_provenance (test_core.ScopeTests.test_reads_utf8_with_provenance) ... ok
+test_rejects_hardlink (test_core.ScopeTests.test_rejects_hardlink) ... ok
+test_rejects_junction_outside_scope (test_core.ScopeTests.test_rejects_junction_outside_scope) ... ok
+test_rejects_large_and_sensitive_files (test_core.ScopeTests.test_rejects_large_and_sensitive_files) ... ok
+test_rejects_windows_escape_forms (test_core.ScopeTests.test_rejects_windows_escape_forms) ... ok
+test_backup_restore_retains_tasks_events_and_refuses_overwrite (test_core.StoreTests.test_backup_restore_retains_tasks_events_and_refuses_overwrite) ... ok
+test_restart_preserves_partial_and_pauses_running_task (test_core.StoreTests.test_restart_preserves_partial_and_pauses_running_task) ... ok
+test_generation_timeout_closes_stream_and_requests_unload (test_core.WorkerTests.test_generation_timeout_closes_stream_and_requests_unload) ... ok
+test_pause_blocks_new_work_and_cancels_stream_under_two_seconds (test_core.WorkerTests.test_pause_blocks_new_work_and_cancels_stream_under_two_seconds) ... ok
+test_model_cannot_change_test_oracle_and_attempts_are_bounded (test_developer_api.DeveloperApiTests.test_model_cannot_change_test_oracle_and_attempts_are_bounded) ... ok
+test_pipeline_retries_format_and_exposes_review_apply_restore (test_developer_api.DeveloperApiTests.test_pipeline_retries_format_and_exposes_review_apply_restore) ... ok
+test_v1_migrates_with_backup_before_schema_changes (test_developer_api.MigrationTests.test_v1_migrates_with_backup_before_schema_changes) ... ok
+test_empty_node_discovery_is_not_a_pass (test_development.RunnerTests.test_empty_node_discovery_is_not_a_pass) ... ok
+test_node_tests_and_npm_build_are_registered_and_executable (test_development.RunnerTests.test_node_tests_and_npm_build_are_registered_and_executable) ... ok
+test_output_is_bounded (test_development.RunnerTests.test_output_is_bounded) ... ok
+test_tests_and_syntax_checks_have_structured_output (test_development.RunnerTests.test_tests_and_syntax_checks_have_structured_output) ... ok
+test_timeout_and_cancel_kill_descendants (test_development.RunnerTests.test_timeout_and_cancel_kill_descendants) ... ok
+test_concurrent_publication_is_refused_before_writing (test_development.WorkspaceTests.test_concurrent_publication_is_refused_before_writing) ... ok
+test_git_staged_content_and_index_are_not_changed (test_development.WorkspaceTests.test_git_staged_content_and_index_are_not_changed) ... ok
+test_interrupted_publish_is_recoverable_without_repeating_writes (test_development.WorkspaceTests.test_interrupted_publish_is_recoverable_without_repeating_writes) ... ok
+test_isolation_publish_restore_preserves_existing_and_untracked_bytes (test_development.WorkspaceTests.test_isolation_publish_restore_preserves_existing_and_untracked_bytes) ... ok
+test_new_file_is_removed_by_restore (test_development.WorkspaceTests.test_new_file_is_removed_by_restore) ... ok
+test_new_nested_directories_are_restored_and_user_files_preserved (test_development.WorkspaceTests.test_new_nested_directories_are_restored_and_user_files_preserved) ... ok
+test_patch_batch_is_validated_before_any_write (test_development.WorkspaceTests.test_patch_batch_is_validated_before_any_write) ... ok
+test_reject_leaves_source_untouched_and_cannot_be_published (test_development.WorkspaceTests.test_reject_leaves_source_untouched_and_cannot_be_published) ... ok
+test_restore_does_not_overwrite_later_user_changes (test_development.WorkspaceTests.test_restore_does_not_overwrite_later_user_changes) ... ok
+test_stale_source_and_stale_test_diff_are_rejected (test_development.WorkspaceTests.test_stale_source_and_stale_test_diff_are_rejected) ... ok
+test_changed_digest_prevents_sending_private_prompt (test_gateway.GatewayTests.test_changed_digest_prevents_sending_private_prompt) ... ok
+test_stream_uses_profile_and_preserves_terminal_evidence (test_gateway.GatewayTests.test_stream_uses_profile_and_preserves_terminal_evidence) ... ok
+test_truncation_never_emits_success (test_gateway.GatewayTests.test_truncation_never_emits_success) ... ok
+test_candidates_secrets_and_literal_query (test_knowledge.KnowledgeTests.test_candidates_secrets_and_literal_query) ... ok
+test_correction_conflict_and_resolution (test_knowledge.KnowledgeTests.test_correction_conflict_and_resolution) ... ok
+test_expired_memory_is_not_context (test_knowledge.KnowledgeTests.test_expired_memory_is_not_context) ... ok
+test_forget_removes_transitive_chat_history (test_knowledge.KnowledgeTests.test_forget_removes_transitive_chat_history) ... ok
+test_forgetting_survives_restore (test_knowledge.KnowledgeTests.test_forgetting_survives_restore) ... ok
+test_global_profile_and_project_isolation (test_knowledge.KnowledgeTests.test_global_profile_and_project_isolation) ... ok
+test_incremental_sources_and_exclusion (test_knowledge.KnowledgeTests.test_incremental_sources_and_exclusion) ... ok
+test_memory_api_pauses_and_persists (test_knowledge.KnowledgeTests.test_memory_api_pauses_and_persists) ... ok
+test_metadata_catalog_and_incremental_file_changes (test_knowledge.KnowledgeTests.test_metadata_catalog_and_incremental_file_changes) ... ok
+test_source_changes_invalidate_derived_knowledge (test_knowledge.KnowledgeTests.test_source_changes_invalidate_derived_knowledge) ... ok
+test_html_scripts_are_not_evidence (test_knowledge.ResearchTests.test_html_scripts_are_not_evidence) ... ok
+test_private_dns_and_credentials_rejected (test_knowledge.ResearchTests.test_private_dns_and_credentials_rejected) ... ok
+test_redirect_is_rechecked_before_connecting (test_knowledge.ResearchTests.test_redirect_is_rechecked_before_connecting) ... ok
+test_source_size_is_bounded (test_knowledge.ResearchTests.test_source_size_is_bounded) ... ok
+test_pause_kills_slow_git_descendant_and_preserves_source (test_preparation.PreparationTests.test_pause_kills_slow_git_descendant_and_preserves_source) ... Executing <Task pending name='Task-99' coro=<PreparationTests.test_pause_kills_slow_git_descendant_and_preserves_source() running at tests/test_preparation.py:57> wait_for=<Future pending cb=[Task.task_wakeup()] created at <Python runtime>\asyncio\base_events.py:463> cb=[_run_until_complete_cb() at <Python runtime>\asyncio\base_events.py:183] created at <Python runtime>\asyncio\runners.py:110> took 0.178 seconds
+Pause during slow Git: 0.033s; descendant PID 5944 terminated.
+ok
+test_external_path_is_not_correct_selection (test_review.ReviewTests.test_external_path_is_not_correct_selection) ... ok
+test_reasoning_without_final_answer_is_failure (test_review.ReviewTests.test_reasoning_without_final_answer_is_failure) ... ok
+test_truncated_json_never_counts_as_complete (test_review.ReviewTests.test_truncated_json_never_counts_as_complete) ... ok
+test_game_and_memory_pressure_pause (test_scheduling.CoexistenceTests.test_game_and_memory_pressure_pause) ... ok
+test_manual_mode_overrides_auto_resume (test_scheduling.CoexistenceTests.test_manual_mode_overrides_auto_resume) ... ok
+test_missing_sensor_fails_closed (test_scheduling.CoexistenceTests.test_missing_sensor_fails_closed) ... ok
+test_return_pauses_and_idle_resumes_checkpoint (test_scheduling.CoexistenceTests.test_return_pauses_and_idle_resumes_checkpoint) ... ok
+test_deadline_disable_and_persistence (test_scheduling.SchedulerTests.test_deadline_disable_and_persistence) ... ok
+test_invalid_unbounded_schedule_rejected (test_scheduling.SchedulerTests.test_invalid_unbounded_schedule_rejected) ... ok
+test_modes_budget_no_overlap_and_no_catch_up_flood (test_scheduling.SchedulerTests.test_modes_budget_no_overlap_and_no_catch_up_flood) ... ok
+test_notice_cooldown_and_hourly_budget (test_scheduling.SchedulerTests.test_notice_cooldown_and_hourly_budget) ... ok
+test_v3_migration_backs_up_and_preserves_memory (test_scheduling.SchedulerTests.test_v3_migration_backs_up_and_preserves_memory) ... ok
+test_validated_http_request_survives_connection_restart (test_stack.StackSmoke.test_validated_http_request_survives_connection_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 21.546s
+
+OK
