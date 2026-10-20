@@ -1,6 +1,6 @@
 # NEXO
 
-Assistente pessoal local de Murilo. Plano integral em `docs/Nexo-Plano-Mestre.md`; original na pasta superior preservado.
+Assistente pessoal em produção. Plano integral em `docs/Nexo-Plano-Mestre.md`; original na pasta superior preservado.
 
 ## Estado
 
